@@ -33,14 +33,15 @@ p {
   width: auto;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  margin: 15px;
+  padding: auto;
+  align-items: center;
 }
 
 .project-thumbnail {
   border: 3px solid var(--mint-color);
-  height: 350px;
-  width: 350;
+  max-height: 350px;
+  max-width: 350px; 
+  justify-content: center;
 }
 
 header {
@@ -52,6 +53,7 @@ footer {
   text-align: center;
   background-color: var(--mint-color);
   color: black;
+  margin-top: 20px 
 }
 
 nav ul {
