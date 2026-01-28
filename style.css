@@ -4,6 +4,8 @@
   src: url("fonts/Web437_IBM_VGA_9x16.woff") format('woff');
 }
 
+media q
+
 :root {
   ---main-color: #32a885;
   ---text-color: white;
