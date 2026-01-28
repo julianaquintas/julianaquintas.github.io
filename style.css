@@ -5,28 +5,45 @@
 }
 
 :root {
-  --mint-color: #32a885
+  ---main-color: #32a885;
+  ---text-color: white;
+}
+
+html, body {
+  height: 100%;
 }
 body {
     max-width: 800px;
+    height: auto;
     margin: auto;
-    border: 5px double var(--mint-color);
+    border: 5px double var(---main-color);
     padding: 5px;
     background-color: black;
-    color: var(--mint-color);
+    color: var(---text-color);
     font-family: "IBM_VGA";
+    --bold-color: white;
 }
 
 h1 {
-  background-color: var(--mint-color);
+  background-color: var(---main-color);
   color: black;
   padding: 0 15px;
   letter-spacing: 10px;
   margin: 0;
 }
 
+li {
+  list-style:square;
+  margin: 5px 0px;
+}
+
+h2 {
+  padding: 0 15px;
+  color: var(---main-color);
+}
+
 p {
-  padding: 0 13px;
+  padding: 0 13px 0 13px;
 }
 
 .project-menu {
@@ -35,13 +52,19 @@ p {
   flex-wrap: wrap;
   padding: auto;
   align-items: center;
+  justify-content: center;
 }
 
 .project-thumbnail {
-  border: 3px solid var(--mint-color);
+  border: 3px solid var(---main-color);
   max-height: 350px;
   max-width: 350px; 
   justify-content: center;
+  margin: 15px
+}
+
+.project-thumbnail a {
+  text-align: center;
 }
 
 header {
@@ -51,9 +74,9 @@ header {
 footer {
   padding: 10px;
   text-align: center;
-  background-color: var(--mint-color);
+  background-color: var(---main-color);
   color: black;
-  margin-top: 20px 
+  margin-top: 20px;
 }
 
 nav ul {
@@ -64,28 +87,45 @@ nav ul {
   justify-content: flex-end;
 
 }
+nav ul li {
+  list-style: none;
 
+}
 nav ul li a {
   display: block;
   padding: 3px 10px;
   text-decoration: none;
+  color: var(---text-color)
 }
 
 nav ul li a:hover {
-  background-color:  var(--mint-color);
-  color: black
+  background-color:  var(---main-color);
+  color: black;
 }
 
 a:visited {
-  color: var(--mint-color);
+  color: var(---main-color);
 }
 
 a {
-  color: var(--mint-color);
+  color: var(---main-color);
 }
 
+p a {
+  text-decoration: underline;
+  color: white;
+}
 #home-button {
     margin-left: 0px;
     text-align: left;
     float: left;
+}
+
+.video-container {
+  align-items: center;
+  margin: 40px auto;
+  flex:1;
+  max-width:100%;
+  display: flex;
+  justify-content: center;
 }
