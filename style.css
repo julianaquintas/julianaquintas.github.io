@@ -85,18 +85,30 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
-
+  justify-content: space-between;
 }
+
+ #home-button {
+    font-size: 28px;
+}
+
+@media  (max-width: 500px) {
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+  }
+}
+
 nav ul li {
   list-style: none;
-
+  align-content: bottom;
 }
 nav ul li a {
   display: block;
-  padding: 3px 10px;
   text-decoration: none;
-  color: var(---text-color)
+  color: var(---text-color);
 }
 
 nav ul li a:hover {
@@ -105,7 +117,7 @@ nav ul li a:hover {
 }
 
 a:visited {
-  color: var(---main-color);
+  color: inherit;
 }
 
 a {
@@ -115,11 +127,6 @@ a {
 p a {
   text-decoration: underline;
   color: white;
-}
-#home-button {
-    margin-left: 0px;
-    text-align: left;
-    float: left;
 }
 
 .video-container {
