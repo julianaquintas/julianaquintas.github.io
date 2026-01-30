@@ -70,7 +70,8 @@ p {
 
 header {
   font-size: 20px;
-  margin: 10px 5px;
+  margin: 10px 12px;
+  
 }
 footer {
   padding: 10px;
@@ -97,18 +98,20 @@ nav ul {
     display: block;
   }
   nav ul li {
-    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
 }
 
 nav ul li {
   list-style: none;
-  align-content: bottom;
 }
+
 nav ul li a {
-  display: block;
   text-decoration: none;
   color: var(---text-color);
+  margin-bottom: 0;
 }
 
 nav ul li a:hover {
